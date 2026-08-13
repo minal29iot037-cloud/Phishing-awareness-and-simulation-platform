@@ -3,7 +3,7 @@ DATABASE = "phishing_awareness.db"
 
 def get_connection():
   connection = sqlite3.connect(DATABASE)
-  connection.row_factory = sqlite3.row
+  connection.row_factory = sqlite3.Row
   return connection
 
 def initialize_database():
